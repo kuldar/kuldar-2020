@@ -347,10 +347,12 @@ body {
 /************/
 
 .projects-background {
-  margin-top: -6rem;
+  margin-top: -4rem;
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0 2rem;
   max-width: 32rem;
@@ -359,27 +361,8 @@ body {
 
 @media only screen and (min-width: 800px) {
   .projects {
-    max-width: 72rem;
-  }
-}
-
-.projects-heading {
-  color: var(--white);
-  text-align: center;
-  font-weight: var(--font-bold);
-  text-transform: uppercase;
-  margin: 0 0 2rem 0;
-  letter-spacing: 0.125rem;
-}
-
-.projects-list {
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 800px) {
-  .projects-list {
     flex-direction: row;
+    max-width: 72rem;
   }
 }
 
@@ -491,4 +474,72 @@ body {
   top: 1.5rem;
   right: 1.5rem;
   opacity: 0.15;
+}
+
+/*************/
+/* Companies */
+/*************/
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .companies {
+    flex-direction: row;
+  }
+}
+
+.companies-heading {
+  color: var(--gray);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  opacity: 0.5;
+}
+
+.companies-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .companies-list {
+    margin: 0 0 0 2rem;
+    justify-content: space-between;
+  }
+}
+
+.company {
+  display: block;
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .company {
+    margin: 0;
+  }
+}
+
+.company-link:hover svg {
+  transform: scale(1.15);
+  opacity: 1;;
+}
+
+.company-link svg {
+  transition: transform 0.2s var(--easing),
+              opacity 0.2s var(--easing);
+  color: var(--gray);
+  opacity: 0.5;
+  display: block;
 }
