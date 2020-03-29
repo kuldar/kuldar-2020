@@ -542,7 +542,7 @@ body {
 
 .company-link:hover svg {
   transform: scale(1.15);
-  opacity: 1;;
+  opacity: 1;
 }
 
 .company-link svg {
