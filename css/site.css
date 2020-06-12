@@ -195,7 +195,7 @@ body {
 .intro-status {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;;
+  align-items: center;
   padding: 1rem 1.25rem 1.25rem 1.5rem;
   margin: 2.5rem 0;
   font-size: var(--text-xl);
@@ -420,18 +420,6 @@ body {
 .project.veebichat .project-link { color: var(--dark-purple); }
 .project.veebichat .project-title { color: var(--darker-purple); }
 
-.project.veebichat .project-description em {
-  white-space: nowrap;
-  font-style: normal;
-  font-weight: var(--font-bold);
-  color: var(--white);
-  background-color: var(--dark-purple);
-  margin-left: 0.125rem;
-  font-size: var(--text-base);
-  padding: 0.125rem 0.25rem;
-  border-radius: 0.25rem;
-}
-
 .project.figma-looper {
   background-color: var(--peach);
   background-image: linear-gradient(135deg, var(--peach) 50%, rgba(255,255,255,0.5));
@@ -461,6 +449,25 @@ body {
   margin: 0.25rem 1rem 1rem 0;
   font-size: var(--text-xl);
   letter-spacing: -0.025em;
+}
+
+.project-description em {
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: var(--font-bold);
+  color: var(--white);
+  margin-left: 0.125rem;
+  font-size: var(--text-base);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.project.ounaturg .project-description em {
+  background-color: var(--dark-green);
+}
+
+.project.veebichat .project-description em {
+  background-color: var(--dark-purple);
 }
 
 .project-url {
